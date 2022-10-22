@@ -29,7 +29,7 @@ pipeline {
                 }
             }
         }*/
-           stage('secrets') {
+        stage('secrets') {
             when {
                 equals expected: true, actual: params.deploy
             }
